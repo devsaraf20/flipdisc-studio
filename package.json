@@ -1,0 +1,32 @@
+{
+  "name": "flipdisc-studio",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Design, simulate and drive flip-disc displays from the browser.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run && node --test bridge/test/*.test.mjs",
+    "typecheck": "tsc -b",
+    "bridge": "node bridge/bridge.mjs"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "ws": "^8.22.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.2.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.6",
+    "vitest": "^5.1.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
